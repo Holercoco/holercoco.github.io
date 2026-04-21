@@ -221,6 +221,19 @@
       line-height: 1.3;
       color: #1f2328;
     }
+    .product-price {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #ff7f2e;
+    }
+
+    .product-price .currency {
+      font-size: 1.2rem;
+      vertical-align: top;
+    }
+    .product-price .price {
+      font-size: 1.75rem;
+    }
   
     /* cart button — bright orange */
     .cart-link {
@@ -509,25 +522,29 @@
       const products = [
         {
           model: 'Q13',
-          name: 'Automatic Dog Barking Deterrent Devices with AI Detection',
+          price: '69.99',
+          name: 'Anti Barking Device for Dogs, Automatic Dog Barking Deterrent Devices with AI Detection, Adjustable Ultrasonic Dog Bark Control with 2 Enhanced Emitters, IPX6 Rechargeable Indoor Outdoor',
           image: './img/Q13.jpg',
           cartLink: '#'
         },
         {
           model: 'Q02',
-          name: 'Ultrasonic Dog Barking Deterrent Devices with Flashlight and 3 Modes',
+          price: '59.99',
+          name: 'Anti Barking Device for Dogs, Ultrasonic Dog Barking Deterrent Devices with 3 Modes, Dog Bark Control 50ft Range with 30 Days Battery Lift, Portable Stop Barking Device with Flashlight',
           image: './img/Q02.jpg',
           cartLink: '#'
         },
         {
           model: 'Q09',
-          name: 'Portable Dog Barking Deterrent Devices Safe & Humane',
+          price: '49.99',
+          name: 'Anti Barking Device for Dogs, Ultrasonic Dog Barking Device, Portable Dog Barking Deterrent Devices Safe & Humane 50FT Bark Control Barks Indoor Outdoors Behavior Correct',
           image: './img/Q09.jpg',
           cartLink: '#'
         },
         {
           model: 'Q11',
-          name: 'Anti Barking Collars, Ultrasonic & Beep &Vibration, Non-Shock',
+          price: '49.99',
+          name: 'Anti Barking Collars,Dog Training Collar with Behaviour Aids,Ultrasonic&Beep&Vibration,Non-Shock Anti Barking Device for Medium Large Dog,IPX7 Waterproof,Rechargeable Stop Barking Dog Deterrent Device',
           image: './img/Q11.jpg',
           cartLink: '#'
         },
@@ -547,6 +564,7 @@
               <div class="card-info">
                 <span class="product-model"><i class="fa-regular fa-registered" style="margin-right: 6px;"></i>${item.model}</span>
                 <div class="product-name">${item.name}</div>
+                <div class="product-price"> <span class="currency">$</span><span class="price">${item.price}</span></div>
                 <a href="${item.cartLink}" class="cart-link" target="_blank" rel="noopener">
                   <i class="fa-solid fa-cart-plus"></i> Add to Cart
                   <i class="fa-solid fa-arrow-right" style="font-size: 0.9rem;"></i>
